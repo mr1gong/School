@@ -9,7 +9,12 @@ import javax.swing.JButton;
 import javax.swing.JFileChooser;
 
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.Reader;
+import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 import javax.swing.JPasswordField;
@@ -62,8 +67,21 @@ public class Okno extends JFrame {
 				JFileChooser fc = new JFileChooser();
 				int retVal = fc.showOpenDialog(null);
                 if (retVal == JFileChooser.APPROVE_OPTION) {
-                    File selectedfile = fc.getSelectedFile();
+                    File selectedFile = fc.getSelectedFile();
 				
+                    try {
+						BufferedReader br = new BufferedReader(new FileReader(selectedFile));
+						ArrayList<String> textZeSouboru = new ArrayList<String>();
+						String temp;
+						while(())
+						
+						
+						
+					} catch (FileNotFoundException e) {
+						
+						e.printStackTrace();
+					}
+                    
 				
 			}}
 		});
