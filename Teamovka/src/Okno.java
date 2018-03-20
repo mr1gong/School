@@ -73,7 +73,7 @@ public class Okno extends JFrame {
 						BufferedReader br = new BufferedReader(new FileReader(selectedFile));
 						ArrayList<String> textZeSouboru = new ArrayList<String>();
 						String temp;
-						while(())
+						while(temp = br.readLine() != null)
 						
 						
 						
